@@ -1,4 +1,4 @@
-name: get_data
+name: download_file
 conda_env: conda.yml
 
 entry_points:

@@ -8,6 +8,7 @@ entry_points:
       wandb_api_key:
         description: "API key for Weights & Biases"
         type: str
+        default: 42aba4b1f320592a6038a07e1aae48a849121af3
 
       steps:
         description: "Comma-separated list of steps to execute (useful for debugging)"
