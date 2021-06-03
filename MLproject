@@ -6,17 +6,17 @@ entry_points:
     parameters:
 
       wandb_api_key:
-        description: API key for Weights & Biases
+        description: "API key for Weights & Biases"
         type: str
 
       steps:
-        description: Comma-separated list of steps to execute (useful for debugging)
+        description: "Comma-separated list of steps to execute (useful for debugging)"
         type: str
-        default: all
+        default: "all"
 
       override:
-        description: Other configuration parameters to override
+        description: "Other configuration parameters to override"
         type: str
         default: ''
 
-    command: "python main.py main.steps=\\'{steps}\\' main.wandb_api_key={wandb_api_key} $(echo {override})"
+    command: "python main.py main.steps={steps} main.wandb_api_key={wandb_api_key}"
